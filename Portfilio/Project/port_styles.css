@@ -255,6 +255,10 @@ body {
   width: 50%;
 }
 
+.section-title-education {
+  color: yellow;
+}
+
 /* End of Education Section */
 
 /* Project Section */
@@ -262,6 +266,7 @@ body {
 .my-projects {
   text-align: center;
   align-items: center;
+  background-color: greenyellow;
 }
 
 .portfolio-img {
@@ -270,21 +275,36 @@ body {
   display: block;
 }
 
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-subtitle-projects {
+  font-size: 20px;
+  color: darkblue;
+}
+
+.section-title-projects {
+  font-size: 40px;
+  color: darkblue; 
+}
 /* End of Project Section */
 
 /* Footer Section */
-
-/* End of Footer Section */
 .footer-section {
   text-align: center;
-  background-image: url(http://media1.popsugar-assets.com/files/2021/01/14/843/n/1922507/10fa7acca6b544e5_simon-berger-twukN12EN7c-unsplash/i/Colorful-Mountains-Zoom-Background.jpg); 
-  background: cover; 
+  background-image: url(http://media1.popsugar-assets.com/files/2021/01/14/843/n/1922507/10fa7acca6b544e5_simon-berger-twukN12EN7c-unsplash/i/Colorful-Mountains-Zoom-Background.jpg);
+  background: cover;
 }
 
 .footer-link {
   font-size: 24px;
-  color:purple; 
+  color: purple;
 }
+
+/* End of Footer Section */
 
 /* General Features */
 
@@ -295,7 +315,7 @@ img {
 
 .footer-subheading {
   font-size: 40px;
-  color: darkblue; 
+  color: darkblue;
 }
 
 .portfolio-img {
