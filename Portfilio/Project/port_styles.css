@@ -195,6 +195,8 @@ body {
   background-color: var(--color-dark);
   color: var(--color-light);
   margin: auto;
+  align-items: center;
+  text-align: center;
 }
 
 .interests {
@@ -203,21 +205,31 @@ body {
 
 .section-title-extracurricular {
   color: cyan;
+  text-align: center;
 }
 
 .interest-heading {
+  text-align: center;
   font-size: 24px;
   color: lightblue;
 }
 
 #work-button {
-  font-size: 50px;
-  color: var(--color-light);
+  font-size: 40px;
+  color: orangered;
+  margin: 0;
+}
+
+.interest-description {
+  text-align: center;
 }
 
 .interest {
   width: 50%;
   height: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .interest-violin {
@@ -233,12 +245,45 @@ body {
   color: var(--color-light);
   font-size: 20px;
   background-image: url(https://www.thebalancecareers.com/thmb/hKctLkuZxqFGd3XpQCUjQBjSPjQ=/3436x2577/smart/filters:no_upscale\(\)/school-books-on-desk--education-concept-871454068-5b548900c9e77c005b04fc8c.jpg);
-  background-size: cover
+  background-size: cover;
+  align-items: center;
+  text-align: center;
 }
 
 #bloor-img {
   height: 50%;
   width: 50%;
+}
+
+/* End of Education Section */
+
+/* Project Section */
+
+.my-projects {
+  text-align: center;
+  align-items: center;
+}
+
+.portfolio-img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* End of Project Section */
+
+/* Footer Section */
+
+/* End of Footer Section */
+.footer-section {
+  text-align: center;
+  background-image: url(http://media1.popsugar-assets.com/files/2021/01/14/843/n/1922507/10fa7acca6b544e5_simon-berger-twukN12EN7c-unsplash/i/Colorful-Mountains-Zoom-Background.jpg); 
+  background: cover; 
+}
+
+.footer-link {
+  font-size: 24px;
+  color:purple; 
 }
 
 /* General Features */
@@ -248,12 +293,9 @@ img {
   max-width: 100%;
 }
 
-#work-button {
-  font-size: 20px;
-}
-
 .footer-subheading {
-  font-size: 24px;
+  font-size: 40px;
+  color: darkblue; 
 }
 
 .portfolio-img {
