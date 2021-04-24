@@ -1,0 +1,303 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Custom Properties */
+:root {
+  --primary-font: "Source Sans Pro", sans-serif;
+  --secondary-font: "Source Code Pro", monospace;
+
+  --weight-reg: 300;
+  --weight-bold: 900;
+
+  --color-light: #fff;
+  --color-dark: #303030;
+  --color-accent: #16e0bd;
+
+  --font-size-h1: 3rem;
+  --font-size-h2: 2.25rem;
+  --font-size-h3: 1.25rem;
+  --font-size-body: 1rem;
+
+  --img-width: 100%;
+
+  --box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
+}
+
+/* For Larger Screen Size */
+/* Introductory/Welcome Section */
+
+.intro_img {
+  width: --img-width;
+  box-shadow: var(--box-shadow);
+}
+
+@media (min-width: 600px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+
+    --img-width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .welcome-section {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+    grid-template-columns: min-content max-content;
+  }
+
+  .intro_img {
+    grid-area: img;
+    min-width: 300px;
+    position: relative;
+    z-index: 4;
+  }
+
+  .section-subtitle-welcome {
+    font-size: 20px;
+    align-self: start;
+    grid-column: -1 / 1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    left: -4em;
+    width: calc(100% + 4em);
+  }
+}
+
+.section-title-welcome {
+  font-weight: normal;
+}
+
+.section-title-welcome strong {
+  /* Print on New Line */
+  display: block;
+}
+
+.section-subtitle {
+  margin: 0;
+  font-size: var(--fs-h3);
+}
+
+.section-subtitle-welcome {
+  background: var(--color-accent);
+  font-family: var(--secondary-font);
+  margin-bottom: 1em;
+  width: --img-width;
+  padding: 0.25em;
+}
+
+.welcome-section {
+  position: relative;
+}
+
+/* End of Introductory/Welcome Section*/
+
+/* Styles for the Navigation/Header Page */
+
+#logo-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+/* Smaller Screens */
+@media (max-width: 600px) {
+  .logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-info {
+    padding: 0.5em 0.5em;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .contact-info {
+    font-size: 14px;
+    top: 0px;
+  }
+
+  .nav {
+    top: 40px;
+    /* display: none; */
+  }
+
+  .logo-img {
+    flex-shrink: 2;
+  }
+
+  #logo-img {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+  }
+}
+
+/* Larger Screens */
+@media (min-width: 600px) {
+  .logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-info {
+    padding: 1em 1em;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .contact-info {
+    font-size: 20px;
+    top: 0px;
+  }
+
+  .nav {
+    top: 40px;
+    /* display: none; */
+  }
+}
+
+body {
+  background: var(--color-light);
+  color: var(--color-dark);
+  margin: 0;
+  font-family: var(--primary-font);
+  font-size: var(--font-size-body);
+  line-height: 1.6;
+}
+
+/* End of Media Queries */
+
+/* Extracurricular Section */
+
+.extracurricular-section {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  margin: auto;
+}
+
+.interests {
+  font-size: 20px;
+}
+
+.section-title-extracurricular {
+  color: cyan;
+}
+
+.interest-heading {
+  font-size: 24px;
+  color: lightblue;
+}
+
+#work-button {
+  font-size: 50px;
+  color: var(--color-light);
+}
+
+.interest {
+  width: 50%;
+  height: 50%;
+}
+
+.interest-violin {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* End of Extracurricular Section */
+
+/* Education Section */
+.education {
+  height: 600px;
+  color: var(--color-light);
+  font-size: 20px;
+  background-image: url(https://www.thebalancecareers.com/thmb/hKctLkuZxqFGd3XpQCUjQBjSPjQ=/3436x2577/smart/filters:no_upscale\(\)/school-books-on-desk--education-concept-871454068-5b548900c9e77c005b04fc8c.jpg);
+  background-size: cover
+}
+
+#bloor-img {
+  height: 50%;
+  width: 50%;
+}
+
+/* General Features */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#work-button {
+  font-size: 20px;
+}
+
+.footer-subheading {
+  font-size: 24px;
+}
+
+.portfolio-img {
+  height: 50%;
+  width: 50%;
+}
+
+/* Typography */
+
+strong {
+  font-weight: bold;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+footer {
+  padding: 5em 2em;
+}
+
+header {
+  padding: 5em 2em;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+.underh1 {
+  font-size: 18px;
+}
