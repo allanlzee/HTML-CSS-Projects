@@ -20,19 +20,17 @@
   --font-size-h2: 2.25rem;
   --font-size-h3: 1.25rem;
   --font-size-body: 1rem;
+  --font-size-description: 20px;
+
+  --description-width: 50%; 
 
   --img-width: 100%;
+  --img-width-education: 100%; 
 
   --box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
 }
 
 /* For Larger Screen Size */
-/* Introductory/Welcome Section */
-
-.intro_img {
-  width: --img-width;
-  box-shadow: var(--box-shadow);
-}
 
 @media (min-width: 600px) {
   :root {
@@ -42,7 +40,28 @@
     --fs-body: 1.125rem;
 
     --img-width: 100%;
+    --img-width-education: 25%; 
   }
+}
+
+@media (max-width: 600px){
+  :root {
+    --fs-h1: 3.5rem; 
+    --fs-h2: 3.25rem;
+    --fs-h3: 1rem; 
+    --fs-body: 0.85rem; 
+    
+    --font-size-description: 16px;
+    --description-width: 100%; 
+  }
+
+}
+
+/* Introductory/Welcome Section */
+
+.intro_img {
+  width: --img-width;
+  box-shadow: var(--box-shadow);
 }
 
 @media (min-width: 600px) {
@@ -192,7 +211,7 @@ body {
 /* Extracurricular Section */
 
 .extracurricular-section {
-  background-color: var(--color-dark);
+  background: linear-gradient(35deg, #0267fe, #8601AF);
   color: var(--color-light);
   margin: auto;
   align-items: center;
@@ -200,17 +219,18 @@ body {
 }
 
 .interests {
-  font-size: 20px;
+  font-size: var(--font-size-description);
 }
 
 .section-title-extracurricular {
   color: cyan;
   text-align: center;
+  font-size: 3.75em;
 }
 
 .interest-heading {
   text-align: center;
-  font-size: 24px;
+  font-size: 30px;
   color: lightblue;
 }
 
@@ -222,6 +242,9 @@ body {
 
 .interest-description {
   text-align: center;
+  width: 50%; 
+  margin: auto; 
+  padding: 1em 1em; 
 }
 
 .interest {
@@ -234,16 +257,16 @@ body {
 
 .interest-violin {
   display: flex;
-  justify-content: space-evenly;
 }
 
 /* End of Extracurricular Section */
 
 /* Education Section */
 .education {
-  height: 600px;
+  display: block; 
+  overflow: auto; 
   color: var(--color-light);
-  font-size: 20px;
+  font-size: 2rem;
   background-image: url(https://www.thebalancecareers.com/thmb/hKctLkuZxqFGd3XpQCUjQBjSPjQ=/3436x2577/smart/filters:no_upscale\(\)/school-books-on-desk--education-concept-871454068-5b548900c9e77c005b04fc8c.jpg);
   background-size: cover;
   align-items: center;
@@ -251,12 +274,53 @@ body {
 }
 
 #bloor-img {
-  height: 50%;
-  width: 50%;
+  width: 32rem;
+  display: block;
+  margin: auto;  
 }
 
 .section-title-education {
   color: yellow;
+  font-size: 2.0em; 
+}
+
+#education-description {
+  width: 40%; 
+  text-align: left; 
+  margin: auto; 
+  color: white; 
+  font-size: 1.5rem; 
+}
+
+@media (max-width: 1200px){
+  #education-description {
+    width: 40%; 
+    font-size: 1.4rem; 
+  }
+
+  #bloor-img {
+    width: 40%
+  }
+}
+
+@media (max-width: 850px) {
+  #education-description {
+    width: 40%;
+    font-size: 1rem; 
+  }
+}
+
+@media (max-width: 600px) {
+  #education-description {
+    width: 40%;
+    font-size: 0.75rem; 
+  }
+}
+
+.education-body {
+  font-size: 1.25em;
+  display: flex; 
+  justify-content: space-between;
 }
 
 /* End of Education Section */
@@ -266,13 +330,33 @@ body {
 .my-projects {
   text-align: center;
   align-items: center;
-  background-color: greenyellow;
+  background: linear-gradient(45deg, #CCFFFF, #FFCCCC);
 }
 
 .portfolio-img {
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+.portfolio-img:hover {
+  animation: shake 0.75s; 
+  animation-iteration-count: infinite; 
+}
+
+@keyframes shake {
+  /* Note that this is from w3schools */ 
+  0% { transform: translate(0.5px, 0.5px) rotate(0deg); }
+  10% { transform: translate(-0.5px, -1px) rotate(-0.5deg); }
+  20% { transform: translate(-1.5px, 0px) rotate(0.5deg); }
+  30% { transform: translate(1.5px, 1px) rotate(0deg); }
+  40% { transform: translate(0.5px, -0.5px) rotate(0.5deg); }
+  50% { transform: translate(-0.5px, 1px) rotate(-0.5deg); }
+  60% { transform: translate(-1.5px, 0.5px) rotate(0deg); }
+  70% { transform: translate(1.5px, 0.5px) rotate(-0.5deg); }
+  80% { transform: translate(-0.5px, -0.5px) rotate(0.5deg); }
+  90% { transform: translate(0.5px, 1px) rotate(0deg); }
+  100% { transform: translate(0.5px, -1px) rotate(-0.5deg); }
 }
 
 .portfolio {
