@@ -1,3 +1,7 @@
+/* Credits: Kevin Powell, freeCodeCamp
+https://www.youtube.com/watch?v=_xkSvufmjEs&t=3336s 
+*/ 
+
 *,
 *::before,
 *::after {
@@ -32,19 +36,19 @@
 
 /* For Larger Screen Size */
 
-@media (min-width: 600px) {
+@media (min-width: 601px) {
   :root {
     --fs-h1: 4.5rem;
     --fs-h2: 3.75rem;
     --fs-h3: 1.5rem;
     --fs-body: 1.125rem;
 
-    --img-width: 100%;
+    --img-width: 80%;
     --img-width-education: 25%; 
   }
 }
 
-@media (max-width: 600px){
+@media (max-width: 599px){
   :root {
     --fs-h1: 3.5rem; 
     --fs-h2: 3.25rem;
@@ -60,7 +64,7 @@
 /* Introductory/Welcome Section */
 
 .intro_img {
-  width: --img-width;
+  width: var(--img-width);
   box-shadow: var(--box-shadow);
 }
 
@@ -78,7 +82,7 @@
 
   .intro_img {
     grid-area: img;
-    min-width: 300px;
+    min-width: 330px;
     position: relative;
     z-index: 4;
   }
@@ -113,13 +117,11 @@
   background: var(--color-accent);
   font-family: var(--secondary-font);
   margin-bottom: 1em;
-  width: --img-width;
   padding: 0.25em;
 }
 
 .welcome-section {
   position: relative;
-  height: 85vh; 
 }
 
 /* End of Introductory/Welcome Section*/
@@ -133,7 +135,7 @@
 }
 
 /* Smaller Screens */
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   .logo {
     display: flex;
     width: 100%;
@@ -168,6 +170,10 @@
     width: 125px;
     border-radius: 50%;
   }
+
+  .nav__list {
+    font-size: 14px; 
+  }
 }
 
 /* Larger Screens */
@@ -198,6 +204,8 @@
   }
 }
 
+
+
 body {
   background: var(--color-light);
   color: var(--color-dark);
@@ -217,6 +225,14 @@ body {
   margin: auto;
   align-items: center;
   text-align: center;
+}
+
+@media (max-width: 600px) 
+{
+  .extracurricular-section {
+    margin-top: auto; 
+  }
+  
 }
 
 .interests {
@@ -239,6 +255,13 @@ body {
   font-size: 2rem;
   color: orangered;
   margin: 0;
+}
+
+@media (max-width: 600px) 
+{
+  .work-button {
+    font-size: 1.25rem; 
+  }
 }
 
 .interest-description {
@@ -346,7 +369,7 @@ body {
 }
 
 @keyframes shake {
-  /* Note that this is from w3schools */ 
+  /* Credits: w3schools */ 
   0% { transform: translate(0.5px, 0.5px) rotate(0deg); }
   10% { transform: translate(-0.5px, -1px) rotate(-0.5deg); }
   20% { transform: translate(-1.5px, 0px) rotate(0.5deg); }
