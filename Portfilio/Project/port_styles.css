@@ -204,8 +204,6 @@ https://www.youtube.com/watch?v=_xkSvufmjEs&t=3336s
   }
 }
 
-
-
 body {
   background: var(--color-light);
   color: var(--color-dark);
@@ -232,7 +230,6 @@ body {
   .extracurricular-section {
     margin-top: auto; 
   }
-  
 }
 
 .interests {
@@ -286,6 +283,7 @@ body {
 /* End of Extracurricular Section */
 
 /* Education Section */
+
 .education {
   display: block; 
   overflow: auto; 
@@ -398,9 +396,11 @@ body {
   font-size: 40px;
   color: darkblue; 
 }
+
 /* End of Project Section */
 
 /* Footer Section */
+
 .footer-section {
   text-align: center;
   background-image: url(http://media1.popsugar-assets.com/files/2021/01/14/843/n/1922507/10fa7acca6b544e5_simon-berger-twukN12EN7c-unsplash/i/Colorful-Mountains-Zoom-Background.jpg);
