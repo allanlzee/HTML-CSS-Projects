@@ -90,8 +90,8 @@
     grid-row: 2;
     text-align: right;
     position: relative;
-    left: -4em;
-    width: calc(100% + 4em);
+    left: -6em;
+    width: calc(100% + 6em);
   }
 }
 
@@ -119,6 +119,7 @@
 
 .welcome-section {
   position: relative;
+  height: 85vh; 
 }
 
 /* End of Introductory/Welcome Section*/
@@ -234,8 +235,8 @@ body {
   color: lightblue;
 }
 
-#work-button {
-  font-size: 40px;
+.work-button {
+  font-size: 2rem;
   color: orangered;
   margin: 0;
 }
@@ -306,7 +307,7 @@ body {
 @media (max-width: 850px) {
   #education-description {
     width: 40%;
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 }
 
@@ -380,12 +381,22 @@ body {
 .footer-section {
   text-align: center;
   background-image: url(http://media1.popsugar-assets.com/files/2021/01/14/843/n/1922507/10fa7acca6b544e5_simon-berger-twukN12EN7c-unsplash/i/Colorful-Mountains-Zoom-Background.jpg);
-  background: cover;
+  background: cover; 
 }
 
 .footer-link {
   font-size: 24px;
-  color: purple;
+  color: darkblue;
+}
+
+.foot-section-subheading {
+  font-size: 2rem; 
+  color: darkblue; 
+}
+
+.footer-link-violin {
+  font-size: 24px; 
+  color: darkblue; 
 }
 
 /* End of Footer Section */
