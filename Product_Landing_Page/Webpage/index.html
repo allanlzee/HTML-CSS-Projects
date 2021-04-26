@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<html lang="en-us">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1.0" />
+  <meta name="keywords" content="Allan, Webpage" />
+  <meta name="description" content="Personal Webpage" />
+  <meta name="author" content="Allan Z." />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <h1>Allan's Personal Webpage</h1>
+
+  <header id="header">
+    <nav id="nav-bar">
+      <h2>
+        <a class="nav-link" href="#About Me">About Me</a>
+        <a class="nav-link" href="#Interests">Interests</a>
+        <a class="nav-link" href="#Education">Education</a>
+        <a class="nav-link" href="#Goals">Goals</a>
+        <a class="nav-link" href="#Questions">Questions</a>
+      </h2>
+    </nav>
+  </header>
+
+  <section id="contact">
+    <div id="contact">
+      <img
+        class="header-img"
+        src="Images/IMG_20200704_213435_256.jpg"
+        alt="Allan's Profile Picture"
+        width="150px"
+      />
+
+      <p id="contact-info">
+        <b>Allan Zhou</b> <br />
+        allanlinzhou@gmail.com <br />
+        allan.zhou@student.tdsb.on.ca <br />
+        437-***-****
+      </p>
+    </div>
+  </section>
+  <!--Define sections for the different components-->
+  <body>
+    <hr />
+
+    <section id="About Me">
+      <h2>About Me</h2>
+      <p>
+        I am a grade 10 student at Bloor Collegiate Institute, currently
+        enrolled in the TOPS (Talented Offerings in the Programs of Science)
+        program, which specializes in curriculum enrichment in mathematics and
+        science.
+        <br />
+        <br />
+
+        I was born and grew up in Toronto, Ontario.
+      </p>
+    </section>
+
+    <section id="Interests"></section>
+    <h2>Interests</h2>
+
+    <h5 class="subheading">Violin Performance</h5>
+    <p class="description">
+      At the University Settlement Music and Arts School, I compete in an annual
+      scholarship audition for music students of all ages. I have been nominated
+      for 9 consecutive years for violin performance, winning a total of 7
+      scholarships towards my music education.
+    </p>
+
+    <label for="video" class="video-label"
+      >Allegro Brillant Op. 19, W.T. Have</label
+    ><br />
+    <br />
+    <iframe
+      id="video"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/smqnNrgdz7E?start=1"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+    <br />
+    <br />
+
+    <label for="video" class="video-label"
+      >Concerto No. 3 in G Major, W.A. Mozart</label
+    >
+    <br /><br />
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/1JLYBkrh8iM?start=3635"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    >
+    </iframe>
+
+    <h5 class="subheading">Sports</h5>
+    <p class="description">
+      I have mainly been playing basketball and badminton for the last 5 years,
+      with a few other sports including volleyball, ultimate frisbee, and
+      swimming. Due to the COVID-19 pandemic, team activities were postponed and
+      training was halted. Fortunately, I am able to practice safely in my
+      condo's gym.
+    </p>
+
+    <div id="sports">
+      <img class = "header-img" src = "Images/download.jpeg" width: 500px; />
+      <img class="header-img" src="Images/badminton.jpeg" />
+
+      <img class="header-img" src="Images/volleyball.jpeg" />
+
+      <img class="header-img" src="Images/swimming.jpeg" />
+
+      <img class="header-img" src="Images/frisbee.jpeg" />
+    </div>
+
+    <h5 class="subheading">Coding</h5>
+
+    <p>Here is a summary of my coding experiences through out high school:</p>
+    <ul>
+      <li>Accelerated Programming (Java)--FIRST Robotics</li>
+      <li>Computer Science Club (C++ / Java/ Python)--Bloor C.I.</li>
+      <li>Web Development (HTML / CSS / JavaScript)--FreeCodeCamp</li>
+    </ul>
+
+    <p>
+      I am currently deciding between pursuing coding projects and competitive
+      programming. However, I am struggling in the latter due to my lack of
+      motivation in solving various difficult problems, whereas I am having more
+      fun learning skills in web development and more.
+    </p>
+
+    <section id="Education"></section>
+    <h5 class="subheading">Education</h5>
+    <p>
+      For elementary school, I attended Orde St. Public School, near the
+      University of Toronto St. George Campus. After, I was accepted to the
+      Extended French program at King Edward Jr. and Sr. Public School, where I
+      pursued studies in French. Shortly after, I applied to the TOPS on Bloor
+      program, a renown for students pursuing a career in the fields of
+      mathematics and science. Through a rigorous application process, including
+      an entrance exam and a student extracurricular form, I was one of 60
+      students selected to the program from a pool of around 500 people.
+    </p>
+
+    <br />
+
+    <div class="image-container-orde">
+      <img
+        src="data:image/jpeg;base64,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"
+        alt="Volleyball Meet"
+      />
+
+      <img id="Orde" src="Images/download (1).jpeg" alt="Orde" />
+    </div>
+
+    <p>
+      Currently, my grade 9 and 10 averages are 94.5% and 95.75%, respectively.
+      However, after a successful third quadmester in Math (97%) and English
+      (96%), my projected average will hover around 96%. Although these marks
+      are not extremely important for university applications, they are helpful
+      towards developing prerequisite skills for future courses.
+    </p>
+
+    <div id="img-container-bloor">
+      <img id="TOPS" src="Images/bloor tops.jpeg" alt="Bloor High School" />
+      <img id="Math-img" src="Images/Math.jpeg" alt=" Math" />
+    </div>
+
+    <p>
+      In the coming years, I am planning to fulfill admission requirements for
+      various engineering and math programs by taking AP Calculus and Vectors,
+      AP Advanced Functions, AP Physics, AP Chemistry, and English (TOPS). This
+      will ensure that I have the admission requirements for the undergraduate
+      programs I am planning to take.
+    </p>
+
+    I plan to apply to:
+    <ul>
+      <li>
+        <b>University of Toronto</b>: Engineering Science/Machine Learning
+      </li>
+      <li><b>University of Toronto</b>: Computer Science</li>
+      <li><b>University of Waterloo</b>: Software Engineering</li>
+      <li><b>University of Waterloo</b>: Computer Science</li>
+      <li>Western University: Computer Science</li>
+      <li>McMaster: Engineering</li>
+    </ul>
+
+    <section id="Goals"></section>
+    <hr />
+
+    <!--Only for freeCodeCamp test cases #7 -> #12 -->
+    <footer id="Questions">
+      <form id="form" action="https://www.freecodecamp.org/email-submit">
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+        <br />
+        <br />
+
+        <textarea
+          rows="10"
+          columns="10"
+          placeholder="Any questions? Contact information above."
+        ></textarea>
+        <br />
+        <br />
+        <input id="submit" type="submit" />
+      </form>
+    </footer>
+  </body>
+</html>
